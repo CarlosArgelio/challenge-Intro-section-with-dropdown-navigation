@@ -5,6 +5,10 @@ import IconTodoList from "./img/icon-todo.svg";
 import IconCalendar from "./img/icon-calendar.svg";
 import IconReminders from "./img/icon-reminders.svg";
 import IconPlanning from "./img/icon-planning.svg";
+import LogoClientAudioPhile from "./img/client-audiophile.svg";
+import LogoClientDataBiz from "./img/client-databiz.svg";
+import LogoClientMaker from "./img/client-maker.svg";
+import LogoClientMeet from "./img/client-meet.svg";
 
 export const Icons = {
   logo: Logo,
@@ -19,5 +23,11 @@ export const Icons = {
     calendar: IconCalendar,
     reminders: IconReminders,
     planning: IconPlanning,
+  },
+  clients: {
+    audioPhile: LogoClientAudioPhile,
+    dataBiz: LogoClientDataBiz,
+    maker: LogoClientMaker,
+    meet: LogoClientMeet,
   },
 };
