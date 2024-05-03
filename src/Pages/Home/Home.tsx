@@ -1,9 +1,9 @@
-import { Attribution } from "./../../Components";
+import { Attribution, Header } from "./../../Components";
 
 export const Home = () => {
   return (
     <>
-      <p className="text-3xl font-bold underline">Hello World</p>
+      <Header />
 
       {/* Features */}
       {/* Company */}
