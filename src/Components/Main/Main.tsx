@@ -1,6 +1,7 @@
-import { Icons } from "./../../assets";
+import { Icons, Images } from "./../../assets";
 
 const { audioPhile, dataBiz, maker, meet } = Icons.clients;
+const { desktopHero, mobileHero } = Images.hero;
 
 export const Main = () => {
   return (
@@ -20,6 +21,11 @@ export const Main = () => {
           <img src={maker} alt="Logo Client Maker" />
         </div>
       </section>
+      <picture>
+        <source srcSet={mobileHero} media="(max-width: 639px)" />
+        <source srcSet={desktopHero} media="(max-width: 640px)" />
+        <img src={mobileHero} alt="Imagen Hero" />
+      </picture>
     </main>
   );
 };

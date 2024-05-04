@@ -10,6 +10,9 @@ import LogoClientDataBiz from "./img/client-databiz.svg";
 import LogoClientMaker from "./img/client-maker.svg";
 import LogoClientMeet from "./img/client-meet.svg";
 
+import ImageHeroMobile from "./img/image-hero-mobile.png";
+import ImageHeroDesktop from "./img/image-hero-desktop.png";
+
 export const Icons = {
   logo: Logo,
   mobile: {
@@ -29,5 +32,12 @@ export const Icons = {
     dataBiz: LogoClientDataBiz,
     maker: LogoClientMaker,
     meet: LogoClientMeet,
+  },
+};
+
+export const Images = {
+  hero: {
+    mobileHero: ImageHeroMobile,
+    desktopHero: ImageHeroDesktop,
   },
 };
