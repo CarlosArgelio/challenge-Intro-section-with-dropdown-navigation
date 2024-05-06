@@ -102,7 +102,7 @@ export const Header = () => {
                       ? "rotate-180 ease-linear duration-200"
                       : "ease-linear duration-200"
                   }`}
-                  src={up}
+                  src={down}
                   alt="Icon Arrow Down"
                 />
               </button>
