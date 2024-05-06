@@ -2,6 +2,7 @@ import Logo from "./img/logo.svg";
 import IconMenuViewMobile from "./img/icon-menu.svg";
 import IconMenuCloseMobile from "./img/icon-close-menu.svg";
 import IconArrowDown from "./img/icon-arrow-down.svg";
+import IconArrowUp from "./img/icon-arrow-up.svg";
 import IconTodoList from "./img/icon-todo.svg";
 import IconCalendar from "./img/icon-calendar.svg";
 import IconReminders from "./img/icon-reminders.svg";
@@ -22,6 +23,7 @@ export const Icons = {
   },
   arrow: {
     down: IconArrowDown,
+    up: IconArrowUp,
   },
   FeactureSection: {
     todoList: IconTodoList,

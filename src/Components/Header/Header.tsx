@@ -3,7 +3,7 @@ import { Icons } from "./../../assets";
 
 const { logo } = Icons;
 const { menu, x } = Icons.mobile;
-const { down } = Icons.arrow;
+const { down, up } = Icons.arrow;
 const { calendar, planning, reminders, todoList } = Icons.FeactureSection;
 
 export const Header = () => {
@@ -56,7 +56,11 @@ export const Header = () => {
                 className="flex items-center gap-1 cursor-pointer w-24 justify-between md:m-0"
               >
                 Feacture
-                <img src={down} alt="Icon Arrow Down" />
+                {subMenuFeacture ? (
+                  <img src={up} alt="Icon Arrow Down" />
+                ) : (
+                  <img src={down} alt="Icon Arrow Down" />
+                )}
               </button>
 
               <ul
@@ -88,7 +92,11 @@ export const Header = () => {
                 className="flex items-center gap-1 cursor-pointer w-24 justify-between md:m-0"
               >
                 Company
-                <img src={down} alt="Icon Arrow Down" />
+                {subMenuCompany ? (
+                  <img src={up} alt="Icon Arrow Down" />
+                ) : (
+                  <img src={down} alt="Icon Arrow Down" />
+                )}
               </button>
               <ul
                 className={`relative left-6 ${
