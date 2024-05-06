@@ -3,7 +3,7 @@ import { Icons } from "./../../assets";
 
 const { logo } = Icons;
 const { menu, x } = Icons.mobile;
-const { down, up } = Icons.arrow;
+const { down } = Icons.arrow;
 const { calendar, planning, reminders, todoList } = Icons.FeactureSection;
 
 export const Header = () => {
