@@ -49,8 +49,8 @@ export const Header = () => {
               <img src={x} alt="" />
             </button>
           </div>
-          <ul className="md:flex md:justify-between md:w-[378px] md:h-9">
-            <li className="flex flex-col items-start gap-1 cursor-pointer mb-7">
+          <ul className="md:flex md:justify-between md:gap-8 md:w-[378px] md:h-9">
+            <li className="flex flex-col items-start gap-1 cursor-pointer mb-7 lg:max-w-24">
               <button
                 onClick={handleSubMenuFeacture}
                 className="flex items-center gap-1 cursor-pointer w-24 justify-between md:m-0"
@@ -60,27 +60,29 @@ export const Header = () => {
               </button>
 
               <ul
-                className={`relative left-6 ${subMenuFeacture ? "" : "hidden"}`}
+                className={`relative left-6 ${
+                  subMenuFeacture ? "" : "hidden"
+                } md:bg-neutral-almost-white md:w-[120px] md:rounded-xl md:shadow-lg md:shadow-slate-400 md:left-[-20px]`}
               >
-                <li className="flex items-center gap-1 cursor-pointer mb-3">
+                <li className="flex items-center gap-1 md:ml-2 cursor-pointer mb-3">
                   <img src={todoList} alt="Icon Todo List" />
                   <span>Todo List</span>
                 </li>
-                <li className="flex items-center gap-1 cursor-pointer mb-3">
+                <li className="flex items-center gap-1 md:ml-2 cursor-pointer mb-3">
                   <img src={calendar} alt="Icon Calendar" />
                   <span>Calendar</span>
                 </li>
-                <li className="flex items-center gap-1 cursor-pointer mb-3">
+                <li className="flex items-center gap-1 md:ml-2 cursor-pointer mb-3">
                   <img src={reminders} alt="Icon Reminders" />
                   <span>Reminders</span>
                 </li>
-                <li className="flex items-center gap-1 cursor-pointer mb-3">
+                <li className="flex items-center gap-1 md:ml-2 ursor-pointer mb-3">
                   <img src={planning} alt="Icon Planning" />
                   <span>Planning</span>
                 </li>
               </ul>
             </li>
-            <li className="flex flex-col items-start gap-1 cursor-pointer mb-7">
+            <li className="flex flex-col items-start gap-1 cursor-pointer mb-7 md:max-w-24">
               <button
                 onClick={handleCloseSubMenuCompany}
                 className="flex items-center gap-1 cursor-pointer w-24 justify-between md:m-0"
@@ -89,11 +91,13 @@ export const Header = () => {
                 <img src={down} alt="Icon Arrow Down" />
               </button>
               <ul
-                className={`relative left-6 ${subMenuCompany ? "" : "hidden"}`}
+                className={`relative left-6 ${
+                  subMenuCompany ? "" : "hidden"
+                } md:bg-neutral-almost-white md:w-[120px] md:shadow-lg md:rounded-xl md:shadow-slate-400 md:ml-[-22px]`}
               >
-                <li className="cursor-pointer mb-3">History</li>
-                <li className="cursor-pointer mb-3">Our Team</li>
-                <li className="cursor-pointer mb-3">Blog</li>
+                <li className="cursor-pointer md:ml-2 mb-3">History</li>
+                <li className="cursor-pointer md:ml-2 mb-3">Our Team</li>
+                <li className="cursor-pointer md:ml-2 mb-3">Blog</li>
               </ul>
             </li>
             <li className="cursor-pointer mb-3">Careers </li>
