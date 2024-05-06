@@ -56,11 +56,15 @@ export const Header = () => {
                 className="flex items-center gap-1 cursor-pointer w-24 justify-between md:m-0"
               >
                 Feacture
-                {subMenuFeacture ? (
-                  <img src={up} alt="Icon Arrow Down" />
-                ) : (
-                  <img src={down} alt="Icon Arrow Down" />
-                )}
+                <img
+                  className={`${
+                    subMenuFeacture
+                      ? "rotate-180 ease-linear duration-200"
+                      : "ease-linear duration-200"
+                  }`}
+                  src={down}
+                  alt="Icon Arrow Down"
+                />
               </button>
 
               <ul
@@ -92,11 +96,15 @@ export const Header = () => {
                 className="flex items-center gap-1 cursor-pointer w-24 justify-between md:m-0"
               >
                 Company
-                {subMenuCompany ? (
-                  <img src={up} alt="Icon Arrow Down" />
-                ) : (
-                  <img src={down} alt="Icon Arrow Down" />
-                )}
+                <img
+                  className={`${
+                    subMenuCompany
+                      ? "rotate-180 ease-linear duration-200"
+                      : "ease-linear duration-200"
+                  }`}
+                  src={up}
+                  alt="Icon Arrow Down"
+                />
               </button>
               <ul
                 className={`relative left-6 ${
