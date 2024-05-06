@@ -23,7 +23,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between m-4 mb-6">
+    <header className="flex items-center justify-between m-4 mb-6 lg:mt-5 lg:mx-10 lg:mb-16">
       <img src={logo} alt="Logo SNAP" />
       <button onClick={handleOpenMenu}>
         <img
@@ -35,7 +35,7 @@ export const Header = () => {
       <nav
         className={`text-neutral-medium-gray ${
           openMenu ? "" : "hidden"
-        } md:block md:w-full md:h-full ml-6`}
+        } md:block md:w-full md:h-full ml-6 lg:ml-11`}
       >
         {/* hidden */}
         {/* Back Menu */}
