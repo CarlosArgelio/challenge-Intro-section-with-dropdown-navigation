@@ -1,5 +1,6 @@
 import Logo from "./img/logo.svg";
 import IconMenuViewMobile from "./img/icon-menu.svg";
+import IconMenuCloseMobile from "./img/icon-close-menu.svg";
 import IconArrowDown from "./img/icon-arrow-down.svg";
 import IconTodoList from "./img/icon-todo.svg";
 import IconCalendar from "./img/icon-calendar.svg";
@@ -17,6 +18,7 @@ export const Icons = {
   logo: Logo,
   mobile: {
     menu: IconMenuViewMobile,
+    x: IconMenuCloseMobile,
   },
   arrow: {
     down: IconArrowDown,
